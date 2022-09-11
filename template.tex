@@ -1,0 +1,322 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Inzane Syllabus Template
+% LaTeX Template
+% Version 1.2 (8.22.2019)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Zane Wolf (zwolf.mlxvi@gmail.com)
+%
+% I (Zane) have left a lot of instructions both in the .tex file and the .cls file that can guide you to customize this document to suite your tastes and requirements. Here is a brief guide: 
+%  - Changing the Main Color: .cls line 39
+%  - Adding more FAQs: .cls line 126 and .tex line 99
+%  - Adding TA emails: uncomment .cls lines 220 & 224 and .tex lines 85 and 89
+%  - Deleting the FAQ sidebar entirely: .tex line 188
+%  - Removing the Lab/TA Info and placing a brief Overview/About section in their place:        uncomment .tex line 91 and .cls line 227, and comment .cls lines for the LAB/TA info        that you no longer want (c. lines 184-227)
+
+%
+% I am also happy to help with crafting/designing modifications to this template to help suite your personal needs in a syllabus. Feel free to reach out! 
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{inzane_syllabus} % a4paper for A4
+
+\usepackage{booktabs, colortbl, xcolor}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{ltablex} 
+\usepackage{multirow}
+
+\setlist{nolistsep}
+
+\usepackage{lscape}
+\newcolumntype{r}{>{\hsize=0.9\hsize}X}
+\newcolumntype{w}{>{\hsize=0.6\hsize}X}
+\newcolumntype{m}{>{\hsize=.9\hsize}X}
+
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\arraystretch}{2.0}
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\profilepic{Courant1.jpg} % Profile picture, if the height of the picture is less than that of the cirle, it will have a flat bottom. 
+
+
+% To remove any of the following, you need to comment/delete the lines in the .cls file (c. line 186). Commenting/deleting the lines below will produce an error. 
+
+%To add different lines, you will need to create the new command, e.g. \profPhone, in the .cls file c. line 76, and command to create the line in the side bar in the .cls file c. line 186
+
+\classname{Theory of Probability} 
+\classnum{Math-UA 233-001\\MA-UY 3014 A} 
+
+%%%%%%%%%%%%%%% PROF INFO
+\profname{Zhuo-Cheng Xiao}
+\officehours{Office Hrs: online upon requests (Will fix time slots after 09/24/22)} 
+\office{Rm 921, WWH (Courant Bldg)}
+\site{\href{https://brightspace.nyu.edu/d2l/home/222243}{\underline{Brightspace}} and \href{https://www.gradescope.com/courses/433284}{\underline{Gradescope}}} 
+\email{zx555@nyu.edu}
+
+%%%%%%%%%%%%%%% COURSE  INFO
+%\prereq{Prereq: Calculus 3 \& Linear Algebra}
+\classdays{Mon \& Wed}
+\classhours{2:00 - 3:15 pm}
+\classloc{CIWW Rm 101}
+
+%%%%%%%%%%%%%%% recitation INFO
+\labdays{Fri}
+\labhours{2:00 - 3:15 pm}
+\labloc{CIWW Rm 101}
+
+%%%%%%%%%%%%%%% TA INFO
+\taAname{Eric Thoma}
+\taAofficehours{Office Hrs: TBD}
+\taAoffice{\href{}{\underline{ZOOM}}}
+% \taAemail{}
+%\taBname{James}
+%\taBofficehours{Office Hrs: Tues \& Thurs 3-4p}
+%\taBoffice{MCZ 104}
+% \taBemail{}
+
+% \about{Fish make up the largest group of vertebrates on the planet, easily outnumbering mammals, marsupials, birds, and reptiles combined. Not only are they abundant, but they've diversified into an extraordinary array of sizes, shapes, lifestyles, and habitats. You can find them in the coldest, deepest parts of the ocean, and in the hottest freshwater ponds in the desert. This course will explore fish diversity and their biology. } 
+
+
+%---------------------------------------------------------------------------------------
+%	 FAQs
+%----------------------------------------------------------------------------------------
+%to add more questions or remove this section, go to the .cls file and start with lines comment
+%lines 226-250. Also comment out this section as well as line 152(ish), the command \makeSide
+
+\qOne{Why there are incomplete information?}
+\aOne{This is a tentative version of syllabus. TA and recitation information will be added soon.}
+
+\qTwo{}
+\aTwo{}
+
+\qThree{}
+\aThree{}
+
+\qFour{}
+\aFour{}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 DESCRIPTION
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 OVERVIEW
+%----------------------------------------------------------------------------------------
+\section{Overview}
+We deal with uncertainty everyday, which may come from 1. the stochastic nature of physical world on the microscopic level or 2. our poor information of issues in human life. Theory of probability will provide us philosophy and methods to address the uncertainty in life. This course is introductory to stochastic analysis via a combination of theory and applying mathematics to real-world problems.
+
+Topics covered will include axioms of mathematical probability, combinatorial analysis, binomial distribution, Poisson and normal approximation, random variables and probability distributions, conditional probability, generating functions, law of large numbers and central limit theorem. Time permitting, I will also introduce interesting theoretical applications like random processes and information theory.
+
+%----------------------------------------------------------------------------------------
+%	 READING MATERIAL
+%----------------------------------------------------------------------------------------
+\vspace{0.5cm} %I make liberal use of the \vspace{} command to partition and place sections just how I want them. Alter as you see fit. 
+\section{Materials}
+
+{\color{myCOLOR} Required Texts}\\
+\textit{A First Course in Probability}. (Ross, 10th edition), \textbf{({\color{myCOLOR}"R"})}. %\href{https://link.springer.com/book/10.1007/978-1-4612-4360-1#toc}{\underline{Accessible for free}}.  
+
+{\color{myCOLOR} Suggested Reading}\\
+\textit{Introduction to Probability}. (Blitzkein, 2nd edition)
+
+
+%----------------------------------------------------------------------------------------
+%	 Learning Objectives
+%----------------------------------------------------------------------------------------
+
+\vspace{0.5cm}
+\section{Learning Objectives}
+%use \begin{outline} or \begin{outline}[enumerate] to create a list with subitems. 
+Below lists samples of study objects (\textbf{not inclusive}) that students that are expected comprehend.
+
+Computational objects:
+\begin{itemize}
+\item Bayes's formula;
+\item expectations and variances of random variables
+\item conditional probability \& joint probability distributions
+\item the classical probability distributions, including their properties and the contexts in
+which they occur
+\end{itemize}
+Theoretical objects:
+\begin{itemize}
+    \item the language of probability theory through probability spaces
+    \item independence and correlation between random variables
+    \item relating random variables to moment generating functions
+    \item the law of large numbers \& the central limit theorems
+\end{itemize}
+%----------------------------------------------------------------------------------------
+%	 GRADING SCHEME
+%----------------------------------------------------------------------------------------
+\vspace{0.5cm}
+\section{Grading Scheme}
+
+%below is the \twentyshort environment - a list with only two inputs. However, there is a \twenty environment, which creates a list with four inputs. You can find/alter details of that table in the .cls file c. lines 320. 
+\begin{twentyshort}
+	%\twentyitemshort{X\%}{Attendance/Participation}
+	\twentyitemshort{25\%}{Weekly Homework}
+	\twentyitemshort{5\%}{Class Participation}
+    \twentyitemshort{40\%}{Midterm I \& II. 20\% each}
+    \twentyitemshort{30\%}{Final Exam}
+\end{twentyshort}
+
+Grades will follow the standard NYU math scale: 
+\begin{center}
+\begin{tabular}{ p{2.5cm} p{0.7cm} p{0.7cm} p{0.7cm} p{0.7cm} p{0.7cm} p{0.7cm} p{0.7cm} p{0.7cm} p{0.7cm}}
+\hline
+ Letter Grade        & A & A- & B+ & B & B- & C+ & C & D &F \\ 
+ Cutoff              & 93 & 90 & 87 & 83 & 80 & 75 & 65 & 50 & <50  \\
+ \hline 
+\end{tabular}
+\end{center}
+Curving may (or not) be added to uplift the letter grades during the final evaluation. 
+
+\vspace{0.5cm}
+\section{Exam Requirements}
+Generally, computational errors are less significant than correct and concise demonstrations of all computational steps. Conversely, only a small portion of scores will be granted if only the final answer is provided without any justifications. As for proof problems, students are expected to write mathematical proofs and explicitly relate theorems to their steps.  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                SECOND PAGE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage % Start a new page
+
+\makeSide % Print the FAQ sidebar; To get rid of, simply comment out and uncomment \makeFullPage
+
+% \makeFullPage
+\vspace{0.5cm}
+\section{Homework Policy}
+Homework should be submitted as pdf files on \href{https://www.gradescope.com/courses/360869}{Gradescope}, which always dues on \textit{\underline{Monday, 5pm}} unless otherwise specified, and our grader will return your homework grading with an explanation before Saturday. Both handwritten and latex formatted are fine, but the students are responsible for the submitted files' readability and completeness. 
+
+Unexpected issues are always popping up to everyone of us due to the great uncertainty of life. Therefore, the lowest two homework grades will be dropped. In addition, the "late" deadline for each homework is \textit{\underline{Monday, 11:59pm}} in case of emergent issues. However, submissions after the deadline but before the "late" deadline will receive a grade discounted by 10\%, and submissions will not be accepted after the "late" deadlines.  
+
+\vspace{0.5cm}
+\section{Make-up Policy}
+Make-up exams or assignments are allowed in limited scenarios provided that the student gets approval from the instructor \emph{before the due date}. An approval may be granted for typical excuses including medical reasons, religious holidays, and family emergencies.
+
+\vspace{0.5cm}
+\section{Class Participation}
+Students are expected to attend the classes, including recitations. Although attendance will not be strictly recorded, 5\% of the final evaluation is based on class participation, including in-class interactions and discussions. 
+
+If students have difficulty attending classes, they should consult the instructor and their advisors in advance.
+
+\vspace{0.5cm}
+\section{Lecture Formality}
+The first five lectures of the course will be hold remotely via zoom until 09/23/22. Students are should check the lecture link under the "zoom" tab on Brightspace website, and inform the instructor any technical issue before the class. 
+
+For the rest of the semester, this course will primarily run in-person until the university instructs otherwise. The remote teaching method is a substitute for short-term and emergent reasons, based on students' requirements (due to covid issues, etc.). During the in-person period, most of the course materials will be presented on classroom blackboards.
+
+\vspace{0.5cm}
+\section{Other Resources}
+\begin{itemize}
+  \item Tutoring: \href{https://math.nyu.edu/dynamic/undergrad/ba-cas/tutoring/}{\underline{Courant tutoring center}} and the \href{https://www.nyu.edu/students/academic-services/undergraduate-advisement/academic-resource-center/tutoring-and-learning.html}{university tutoring center}.
+  \item \href{https://www.nyu.edu/about/leadership-university-administration/office-of-the-president/office-of-the-provost/university-life/office-of-studentaffairs/student-health-center/moses-center-for-student-accessibility.html}{Moses Center for Student Accessibility} for students with any physical or mental inconveniences.
+\end{itemize}
+
+\vspace{0.5cm}
+\section{Academic Integrity}
+All students are expected to adhere to the codes of academic integrity specified by New York Univerisity.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                COURSE SCHEDULE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\makeFullPage
+\section{Tentative Class Schedule}
+Section numbers refer to {\color{myCOLOR}"R"}.
+\begin{center}
+\begin{tabularx}{\textwidth}{p{2cm}p{2cm}p{2.5cm}p{11cm}} %change the width of the comments by changing these cm measurements. Add/substract columns by adding/deleting p{} sections. 
+\arrayrulecolor{myCOLOR}\hline
+\large{Week} & \large{Date} & \large{Section} & \large{Materials}
+\arrayrulecolor{myCOLOR}\hline
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MODULE 1
+\multicolumn{4}{l}{\textbf{\textcolor{myCOLOR}{\large MODULE 1: Eelemental of Probability Theory}}} \\
+\hline
+% Week & Topic & Readings \\ \hline 
+%%Alternatively, instead of Week #, you can do Class date for meeting
+Week 2 & 09/05 &          & Labor day; No class\\
+       & 09/07 & 1.1-3    & Introduction; Combinatorics \\
+\arrayrulecolor{maingray}\hline
+Week 3 & 09/12 & 1.4-5, 2.1-3  & Combinatorics; Sample space; Axioms of probability\\
+       & 09/14 & 2.4-5    & Properties of sample space; Examples  \\
+\arrayrulecolor{maingray}\hline
+Week 4 & 09/19 & 3.1-3    & Conditional probabilities; Beyes' Formula\\
+       & 09/21 & 3.4-5    & Independence; More on conditional probabilities; \\
+\arrayrulecolor{maingray}\hline
+Week 5 & 09/26 & 4.1-2, 4.10 & Random variables; (Probability \& cumulative) distribution functions\\
+       & 09/30 & 4.3-5    & Expectation \& variance of discrete random variables \\
+\arrayrulecolor{maingray}\hline
+Week 6 & 10/03 & 4.6-4.8  & Examples of discrete random variables  \\
+       & 10/05 & 5.1-2    & Expectation \& variance of continuous random variables \\
+\arrayrulecolor{maingray}\hline
+Week 7 & 10/11 & 5.3-6    & Examples of discrete random variables  \\
+       & 10/12 & 4.7, 4.9 & Transformation rule; More on expectation\\
+ \arrayrulecolor{myCOLOR}\hline
+\multicolumn{4}{l}{\textbf{\textcolor{myCOLOR}{\large MODULE 2: Joint \& Conditional Distributions; Moments}}} \\
+\hline
+Week 8 & 10/17 &          &  \textcolor{myCOLOR}{\large Midterm 1}\\
+       & 10/19 & 6.1, 6.7 & Joint distributions \\
+ \arrayrulecolor{maingray}\hline
+Week 9 & 10/24 & 6.2-3    & Independent random variables and their sums \\
+       & 10/26 & 7.1-2    & Expectation of sums of random variables \\
+\arrayrulecolor{maingray}\hline
+Week 10 & 10/31 & 7.4     & Covariance and correlations \\
+        & 11/02 & 7.3  & Moments \\
+\arrayrulecolor{maingray}\hline
+Week 11 & 11/07 & 6.4-5   & Conditional distributions  \\
+        & 11/09 & 7.5-6   & Conditional moments \\
+\arrayrulecolor{maingray}\hline       
+Week 12 & 11/14 & 7.7     & Moment generating functions  \\
+        & 11/16 & 7.8     & More on normal random variables  \\
+\arrayrulecolor{maingray}\hline
+Week 13 & 11/21 &        &  \textcolor{myCOLOR}{\large Midterm 2}\\
+        & 11/23 &        & Fall break; No Class \\
+\arrayrulecolor{myCOLOR}\hline
+\multicolumn{4}{l}{\textbf{\textcolor{myCOLOR}{\large Module 3: Limit Theorems and Other Topics }}} \\
+\hline         
+Week 14 & 11/28 & 8.1-2  &  Stochastic convergence; The weak law of large numbers\\
+        & 11/30 & 8.4    &  The strong law of large numbers\\
+\arrayrulecolor{maingray}\hline
+Week 15 & 12/05 & 8.3    &  The central limit theorem\\
+        & 12/07 & 9.1    &  Poisson process\\
+\arrayrulecolor{maingray}\hline
+Week 16 & 12/12 & 9.2    &  Markov processes (overview)\\
+        & 12/14 & 9.3-4  &  Information theory and entropy (overview)\\
+\arrayrulecolor{maingray}\hline
+        & undetermined  &  & \textcolor{myCOLOR}{\large Final Exam}\\ 
+\arrayrulecolor{myCOLOR}\hline
+
+\end{tabularx}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                LAB SCHEDULE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%\section{Lab Schedule}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
+
+
+
